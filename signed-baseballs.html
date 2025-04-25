@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy in Motion – Signed Baseballs</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fef9ef;
+      color: #2b2b2b;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-image: url('https://www.transparenttextures.com/patterns/baseball.png');
+      background-size: 200px;
+    }
+    header {
+      background: linear-gradient(135deg, #e63946, #f1c40f);
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      opacity: 0.95;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+    header a:hover {
+      transform: scale(1.1);
+      color: #2ecc71;
+    }
+    section {
+      padding: 4rem 2rem;
+      margin-top: 60px;
+    }
+    h2 {
+      font-size: 2.8rem;
+      color: #e63946;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      position: relative;
+    }
+    h2::after {
+      content: '⚾';
+      position: absolute;
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      animation: spin 3s infinite linear;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product-card {
+      background: #fff;
+      border: 5px solid #2ecc71;
+      border-radius: 15px;
+      padding: 1.5rem;
+      width: 280px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      transform: rotate(-2deg);
+    }
+    .product-card:nth-child(even) {
+      transform: rotate(2deg);
+    }
+    .product-card:hover {
+      transform: scale(1.05) rotate(0deg);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+      border: 3px solid #f1c40f;
+    }
+    .product-card h3 {
+      font-size: 1.6rem;
+      margin: 0.5rem 0;
+      color: #e63946;
+      font-weight: 700;
+    }
+    .product-card p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      color: #2b2b2b;
+      font-style: italic;
+    }
+    .product-card .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2ecc71;
+      margin: 0.5rem 0;
+    }
+    .product-card button {
+      background: linear-gradient(135deg, #e63946, #f1c40f);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      font-weight: 600;
+      transition: transform 0.2s ease;
+    }
+    .product-card button:hover {
+      transform: scale(1.1);
+      background: linear-gradient(135deg, #f1c40f, #e63946);
+    }
+    footer {
+      background: linear-gradient(135deg, #2ecc71, #e63946);
+      color: #fff;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+  <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Babe Ruth Signed Baseball",
+        "image": "https://via.placeholder.com/300x300.png?text=Babe+Ruth+Baseball",
+        "description": "Snag this Babe Ruth baseball—it’s a total game-changer! Authenticated with a certificate of authenticity.",
+        "brand": {"@type": "Brand", "name": "Legacy in Motion"},
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "4999.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "3"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Tom"},
+            "reviewBody": "A true collector's item! Worth every penny.",
+            "reviewRating": {"@type": "Rating", "ratingValue": "5"}
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Derek Jeter Signed Baseball",
+        "image": "https://via.placeholder.com/300x300.png?text=Derek+Jeter+Baseball",
+        "description": "This Derek Jeter signed ball is straight-up legendary! Comes with COA.",
+        "brand": {"@type": "Brand", "name": "Legacy in Motion"},
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "999.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "10"
+        }
+      },
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Hank Aaron Signed Baseball",
+        "image": "https://via.placeholder.com/300x300.png?text=Hank+Aaron+Baseball",
+        "description": "Hank Aaron’s signature on this ball? Yes, please! Authenticated.",
+        "brand": {"@type": "Brand", "name": "Legacy in Motion"},
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "1499.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "4"
+        }
+      }
+    ]
+  </script>
+</head>
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="signed-baseballs.html">Signed Baseballs</a>
+    <a href="posters.html">Posters</a>
+    <a href="baseball-cards.html">Baseball Cards</a>
+    <a href="cart.html">Cart</a>
+  </header>
+
+  <section>
+    <h2>Signed Baseballs</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300.png?text=Babe+Ruth+Baseball" alt="Babe Ruth Signed Baseball">
+        <h3>Babe Ruth Signed Baseball</h3>
+        <p>Snag this Babe Ruth baseball—it’s a total game-changer! 🔥 Authenticated.</p>
+        <div class="price">$4,999.99</div>
+        <button onclick="addToCart('Babe Ruth Signed Baseball', 4999.99)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300.png?text=Derek+Jeter+Baseball" alt="Derek Jeter Signed Baseball">
+        <h3>Derek Jeter Signed Baseball</h3>
+        <p>This Derek Jeter signed ball is straight-up legendary! ⚾ Comes with COA.</p>
+        <div class="price">$999.99</div>
+        <button onclick="addToCart('Derek Jeter Signed Baseball', 999.99)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300.png?text=Hank+Aaron+Baseball" alt="Hank Aaron Signed Baseball">
+        <h3>Hank Aaron Signed Baseball</h3>
+        <p>Hank Aaron’s signature on this ball? Yes, please! 💪 Authenticated.</p>
+        <div class="price">$1,499.99</div>
+        <button onclick="addToCart('Hank Aaron Signed Baseball', 1499.99)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Legacy in Motion – Let’s Play Ball! ⚾</p>
+    <p>Contact us at <a href="mailto:info@legacyinmotion.com">info@legacyinmotion.com</a> | Follow us on <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+  </footer>
+
+  <script>
+    function addToCart(name, price) {
+      const item = { name, price, quantity: 1 };
+      let cart = JSON.parse(localStorage.getItem('legacyCart')) || [];
+      const existing = cart.find(i => i.name === name);
+      if (existing) existing.quantity += 1;
+      else cart.push(item);
+      localStorage.setItem('legacyCart', JSON.stringify(cart));
+      alert(`${name} has been added to your cart!`);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy in Motion – Baseball Cards</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #fef9ef;
+      color: #2b2b2b;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background-image: url('https://www.transparenttextures.com/patterns/baseball.png');
+      background-size: 200px;
+    }
+    header {
+      background: linear-gradient(135deg, #e63946, #f1c40f);
+      padding: 1rem 0;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      opacity: 0.95;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-size: 1.2rem;
+      font-weight: 600;
+      transition: transform 0.3s ease;
+    }
+    header a:hover {
+      transform: scale(1.1);
+      color: #2ecc71;
+    }
+    section {
+      padding: 4rem 2rem;
+      margin-top: 60px;
+    }
+    h2 {
+      font-size: 2.8rem;
+      color: #e63946;
+      margin-bottom: 2rem;
+      font-weight: 700;
+      position: relative;
+    }
+    h2::after {
+      content: '⚾';
+      position: absolute;
+      font-size: 2rem;
+      margin-left: 0.5rem;
+      animation: spin 3s infinite linear;
+    }
+    @keyframes spin {
+      100% { transform: rotate(360deg); }
+    }
+    .product-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .product-card {
+      background: #fff;
+      border: 5px solid #2ecc71;
+      border-radius: 15px;
+      padding: 1.5rem;
+      width: 280px;
+      box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      transform: rotate(-2deg);
+    }
+    .product-card:nth-child(even) {
+      transform: rotate(2deg);
+    }
+    .product-card:hover {
+      transform: scale(1.05) rotate(0deg);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    }
+    .product-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 200px;
+      object-fit: cover;
+      border: 3px solid #f1c40f;
+    }
+    .product-card h3 {
+      font-size: 1.6rem;
+      margin: 0.5rem 0;
+      color: #e63946;
+      font-weight: 700;
+    }
+    .product-card p {
+      font-size: 1rem;
+      margin: 0.5rem 0;
+      color: #2b2b2b;
+      font-style: italic;
+    }
+    .product-card .price {
+      font-size: 1.3rem;
+      font-weight: bold;
+      color: #2ecc71;
+      margin: 0.5rem 0;
+    }
+    .product-card button {
+      background: linear-gradient(135deg, #e63946, #f1c40f);
+      color: #fff;
+      border: none;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      border-radius: 25px;
+      cursor: pointer;
+      margin-top: 0.5rem;
+      font-weight: 600;
+      transition: transform 0.2s ease;
+    }
+    .product-card button:hover {
+      transform: scale(1.1);
+      background: linear-gradient(135deg, #f1c40f, #e63946);
+    }
+    footer {
+      background: linear-gradient(135deg, #2ecc71, #e63946);
+      color: #fff;
+      padding: 1.5rem;
+      margin-top: 3rem;
+    }
+    footer a {
+      color: #f1c40f;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    footer a:hover {
+      color: #fff;
+      text-decoration: underline;
+    }
+  </style>
+  <script type="application/ld+json">
+    [
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "1952 Topps Mickey Mantle Card",
+        "image": "https://via.placeholder.com/300x300.png?text=Mickey+Mantle+Card",
+        "description": "A 1952 Topps Mickey Mantle baseball card, graded PSA 8.",
+        "brand": {"@type": "Brand", "name": "Legacy in Motion"},
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "24999.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "2"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": {"@type": "Person", "name": "Mike"},
+            "reviewBody": "The holy grail of baseball cards. Thrilled to own it.",
+            "reviewRating": {"@type": "Rating", "ratingValue": "5"}
+          }
+        ]
+      },
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "1909 T206 Honus Wagner Card",
+        "image": "https://via.placeholder.com/300x300.png?text=Honus+Wagner+Card",
+        "description": "The iconic Honus Wagner card, graded PSA 5, a collector's dream.",
+        "brand": {"@type": "Brand", "name": "Legacy in Motion"},
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "3499999.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "5",
+          "reviewCount": "1"
+        }
+      },
+      {
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "1933 Goudey Babe Ruth Card",
+        "image": "https://via.placeholder.com/300x300.png?text=Babe+Ruth+Card",
+        "description": "A 1933 Goudey Babe Ruth card, graded PSA 7, a rare gem.",
+        "brand": {"@type": "Brand", "name": "Legacy in Motion"},
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "USD",
+          "price": "199999.99",
+          "availability": "https://schema.org/InStock"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "3"
+        }
+      }
+    ]
+  </script>
+</head>
+<body>
+  <header>
+    <a href="index.html">Home</a>
+    <a href="signed-baseballs.html">Signed Baseballs</a>
+    <a href="posters.html">Posters</a>
+    <a href="baseball-cards.html">Baseball Cards</a>
+    <a href="cart.html">Cart</a>
+  </header>
+
+  <section>
+    <h2>Baseball Cards</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300.png?text=Mickey+Mantle+Card" alt="1952 Topps Mickey Mantle Card">
+        <h3>1952 Topps Mickey Mantle Card</h3>
+        <p>This Mickey Mantle card is a total treasure—graded PSA 8! 💎</p>
+        <div class="price">$24,999.99</div>
+        <button onclick="addToCart('1952 Topps Mickey Mantle Card', 24999.99)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300.png?text=Honus+Wagner+Card" alt="1909 T206 Honus Wagner Card">
+        <h3>1909 T206 Honus Wagner Card</h3>
+        <p>The Honus Wagner card—every collector’s dream, graded PSA 5! 🌟</p>
+        <div class="price">$3,499,999.99</div>
+        <button onclick="addToCart('1909 T206 Honus Wagner Card', 3499999.99)">Add to Cart</button>
+      </div>
+      <div class="product-card">
+        <img src="https://via.placeholder.com/300x300.png?text=Babe+Ruth+Card" alt="1933 Goudey Babe Ruth Card">
+        <h3>1933 Goudey Babe Ruth Card</h3>
+        <p>A Babe Ruth card from 1933—graded PSA 7 and super rare! ⚾</p>
+        <div class="price">$199,999.99</div>
+        <button onclick="addToCart('1933 Goudey Babe Ruth Card', 199999.99)">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Legacy in Motion – Let’s Play Ball! ⚾</p>
+    <p>Contact us at <a href="mailto:info@legacyinmotion.com">info@legacyinmotion.com</a> | Follow us on <a href="#">Twitter</a> | <a href="#">Instagram</a></p>
+  </footer>
+
+  <script>
+    function addToCart(name, price) {
+      const item = { name, price, quantity: 1 };
+      let cart = JSON.parse(localStorage.getItem('legacyCart')) || [];
+      const existing = cart.find(i => i.name === name);
+      if (existing) existing.quantity += 1;
+      else cart.push(item);
+      localStorage.setItem('legacyCart', JSON.stringify(cart));
+      alert(`${name} has been added to your cart!`);
+    }
+  </script>
+</body>
+</html>
